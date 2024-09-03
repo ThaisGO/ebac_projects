@@ -3,5 +3,4 @@ Sandbox de projetos do curso de [Engenheiro Front End](https://ebaconline.com.br
 
 ## Author
 -Website - [Thais](https://github.com/ThaisGO)
-
 -Cursos - [EBAC](https://ebaconline.com.br/)
