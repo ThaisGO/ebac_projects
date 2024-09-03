@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+    margin: 40px auto;
+    max-width: 640px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+form {
+    margin-top: 40px;
+}
+
+form input,
+form button{
+    display: block;
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+button {
+    background-color: aqua;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:aquamarine;
+}
+
+#submit-message {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    display: none;
+}
+
+#submit-message.error {
+    color: red;
+    font-style: italic;
+}
+
+#submit-message.success {
+    color: green;
+}
+
