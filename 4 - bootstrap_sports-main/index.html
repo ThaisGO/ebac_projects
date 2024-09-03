@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Top Esportes</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+    ">
+
+    <style>
+        header {
+            background-color: var(--bs-gray-dark);
+            padding: 8px 0;
+        }
+        
+        h1 {
+            color: #fff;
+            text-align: center;
+        }
+
+        .carousel .carousel-item {
+            max-height: 450px;
+        }
+        
+        .carousel-item img {
+            object-fit:cover;
+            max-height: 450px;
+        }
+
+        .cards-section {
+            padding-bottom: 1.5rem;
+        }
+
+        .card {
+            margin-top: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Top 3 Esportes</h1>
+        </header>
+
+        <section>
+            <div class="container p-0">
+                <div id="carousel-sport" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img class="d-block w-100" src="./img/volei1.jpg" alt="">
+                            <!-- <img class="d-block w-100" src="https://via.placeholder.com/320x320" alt=""> -->
+                        </div>
+
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img class="d-block w-100" src="./img/futebol1.jpg" alt="">
+                        </div>
+
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img class="d-block w-100" src="./img/basquete1.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <button data-bs-target="#carousel-sport" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+            
+                    <button data-bs-target="#carousel-sport" data-bs-slide="next" class="carousel-control-next" type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards-section">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="./img/volei2.jpg" alt="">
+                        <div class="card-body">
+                            <h4>Título Esporte</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias voluptatibus pariatur unde quasi facere. Voluptatum adipisci non, magnam, odio voluptatibus voluptas suscipit quam quisquam harum placeat doloremque neque consectetur! Est.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="./img/futebol2.jpg" alt="">
+                        <div class="card-body">
+                            <h4>Título Esporte</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias voluptatibus pariatur unde quasi facere. Voluptatum adipisci non, magnam, odio voluptatibus voluptas suscipit quam quisquam harum placeat doloremque neque consectetur! Est.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="./img/basquete2.jpg" alt="">
+                        <div class="card-body">
+                            <h4>Título Esporte</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias voluptatibus pariatur unde quasi facere. Voluptatum adipisci non, magnam, odio voluptatibus voluptas suscipit quam quisquam harum placeat doloremque neque consectetur! Est.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="./img/volei2.jpg" alt="">
+                        <div class="card-body">
+                            <h4>Título Esporte</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias voluptatibus pariatur unde quasi facere. Voluptatum adipisci non, magnam, odio voluptatibus voluptas suscipit quam quisquam harum placeat doloremque neque consectetur! Est.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="./img/futebol2.jpg" alt="">
+                        <div class="card-body">
+                            <h4>Título Esporte</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias voluptatibus pariatur unde quasi facere. Voluptatum adipisci non, magnam, odio voluptatibus voluptas suscipit quam quisquam harum placeat doloremque neque consectetur! Est.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="./img/basquete2.jpg" alt="">
+                        <div class="card-body">
+                            <h4>Título Esporte</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias voluptatibus pariatur unde quasi facere. Voluptatum adipisci non, magnam, odio voluptatibus voluptas suscipit quam quisquam harum placeat doloremque neque consectetur! Est.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
+    "></script>
+</body>
+</html>

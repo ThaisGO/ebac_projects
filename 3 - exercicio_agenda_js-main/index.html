@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./main.css">
+    <title>Agenda EBAC</title>
+</head>
+<body>
+    <div class="container">
+        <section class="cadastro-container">
+            <h1>Cadastrar Contatos</h1>
+
+            <form id="form-contatos">
+                <div>
+                    <label for="nome">Nome:
+                        <input type="text" nome="name" id="inputNome" required>
+                    </label>
+                </div>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="inputTelefone" maxlength="15" placeholder="(XX) XXXXX-XXXX" onkeyup="handlePhone(event)" pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{5})-([0-9]{4})" title="Formato do telefone (99)99999-9999" required/>
+
+                <button type="submit">Adicionar</button>
+            </form>
+        </section>
+        
+        <section class="contatos-container">
+            <h1>Contatos</h1>
+
+            <table cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                </tbody>
+            </table>
+
+        </section>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

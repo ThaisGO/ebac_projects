@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+body {
+    background-color: #F5F6FA;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #C6D30D;
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #C6D30D;
+}
+
+header {
+    background-color: #3D3D3D;
+    padding: 12px 0;
+}
+
+header > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+header ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+header ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+header ul li a:hover {
+    border-bottom: 2px solid #C6D30D;
+}
+
+#sobre > .container{
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+#sobre img {
+    max-width: 100%;
+}
+
+#sobre p {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1%;
+    row-gap: 1.5rem;
+}
+
+#produtos img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+#produtos h3 {
+    color: #3D3D3D;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#produtos p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#produtos button {
+    width: 100%;
+    margin-top: 8px;
+    padding: 10px 8px;
+    background-color: #C6D30D;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #F5F6FA;
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: #3D3D3D;
+    color: #C6D30D;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        max-width: 90%
+    }
+
+    #sobre > .container{
+        display: block;
+    }
+
+    #sobre img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #produtos h2 {
+        margin-bottom: 30px;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+        row-gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header ul li {
+        margin-left: 30px;
+    }
+
+    .produtos {
+        display: block;
+    }
+
+    .produtos h3,
+    .produtos p{
+        text-align: center;
+    }
+}
+
+
+
+
